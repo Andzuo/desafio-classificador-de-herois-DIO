@@ -1,14 +1,21 @@
 class hero {
-    constructor(name, tip, atack) {
+    constructor(name, age, tips) {
         this.name = name,
-        this.tip = tip,
-        this.atack = atack
+        this.age = age,
+        this.tips = tips
     }
+};
+const attack = {
+    mago: "magia",
+    guerreiro: "espada",
+    monge: "artes marciais",
+    ninja: "shuriken",
 }
+function attackHero(hero) {
+    if (hero.tips in attack) {
+        console.log(`O ${hero.name} Atacou usando ${attack[hero.tips]}`);
+    } 
+};
 
-let battle =  new hero("Chico Buaque", "Mago", "usou magia");
-
-
-function atackHero(name, tip, atack) {
-    
-}
+const myHero = new hero("Chico Buaque", 21, "Mago");
+attackHero(myHero);
