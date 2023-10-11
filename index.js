@@ -17,5 +17,5 @@ function attackHero(hero) {
     } 
 };
 
-const myHero = new hero("Chico Buaque", 21, "Mago");
+const myHero = new hero("Chico Buaque", 21, "mago");
 attackHero(myHero);
